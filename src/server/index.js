@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticRouter } from 'react-router-dom';
 import express from 'express';
 import { renderToString } from 'react-dom/server';
-import Document from './views/Document'
+import Document from './components/Document'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
