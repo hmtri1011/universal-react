@@ -1,0 +1,9 @@
+.about {
+  background: red;
+
+  .button {
+    background: blue;
+    display: inline-block;
+    padding: 20px;
+  }
+}

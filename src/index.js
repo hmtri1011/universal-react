@@ -1,4 +1,4 @@
-import app from './server';
+import app from './server/index';
 import http from 'http';
 
 const server = http.createServer(app);
@@ -19,7 +19,7 @@ if (module.hot) {
   module.hot.accept('./server', () => {
     console.log('🔁  HMR Reloading `./server`...');
     server.removeListener('request', currentApp);
-    const newApp = require('./server').default;
+    const newApp = require('./server/index').default;
     server.on('request', newApp);
     currentApp = newApp;
   });
