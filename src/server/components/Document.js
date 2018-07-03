@@ -14,6 +14,7 @@ class Document extends Component {
             <link rel="stylesheet" href={assets.client.css} />
           )}
 
+          {assets.vendor.js && <script src={assets.vendor.js} />}
           {process.env.NODE_ENV === 'production' ? (
             <script src={assets.client.js} defer />
           ) : (
